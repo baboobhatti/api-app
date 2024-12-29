@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 
-const page = async (props:any) => {
+const page = async (props: any) => {
   // const url = await fetch(`https://simple-books-api.glitch.me/books/url-id`)
   // const url = await fetch(`https://simple-books-api.glitch.me/books/${props.params.id}`)
   // const res = await url.json()
@@ -11,8 +11,7 @@ const page = async (props:any) => {
   
   const url = await fetch(`https://jsonplaceholder.typicode.com/users/${props.params.id}`)
   const res = await url.json()
-  console.log(props);
-  
+  console.log(res);
 
 
     // console.log(props);
